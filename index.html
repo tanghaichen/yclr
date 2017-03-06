@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+   *{
+   	padding: 0;
+   	margin:0;
+   	list-style: none;
+   }
+   body{
+   	background: black;
+   }
+   ul{
+   	height: 200px;
+   	width: 200px;
+   	margin: 300px auto;
+   	position: relative;
+   	transform-style: preserve-3d;
+      animation: wei 2s infinite linear ;
+   }
+   li{
+   	width: 200px;
+   	height: 200px;
+   	text-align: center;
+   	line-height: 200px;
+   	color: #fff;
+   	position: absolute;
+
+   }
+   .a{
+   	transform: translateZ(100px) rotateX(0deg);
+   	/*background: radial-gradient(circle,#fff,black);*/
+   	background: gray;
+     background: url(http://i1.piimg.com/587265/a4d8ff0002d2b9f0.jpg) no-repeat;
+   	background-size: 100%;
+   	/*opacity: 0.8;*/
+   }
+   .b{
+     transform: rotateX(-90deg) translateZ(100px);
+    background: url(http://i1.piimg.com/587265/85babf7b3a3d5b66.jpg) no-repeat;
+    background-size: 100%;	
+     /*opacity: 0.8;*/
+   }
+   .c{
+   	transform: rotateX(-180deg) translateZ(100px);
+   	 background: url(http://i1.piimg.com/587265/ec6c488ba2c39f92.jpg) no-repeat;
+    background-size: 100%;	
+   	/*opacity: 0.8;*/
+   }
+   .d{
+   	transform: rotateX(-270deg) translateZ(100px);
+   	 background: url(http://i1.piimg.com/587265/5d3bfa2850a90e16.jpg) no-repeat;
+    background-size: 100%;	
+   	/*opacity: 0.8;*/
+   }
+   .e{
+   	transform: rotateY(-90deg) translateZ(100px);
+   	 background: url(http://i1.piimg.com/587265/edd6038fed141e56.jpg) no-repeat;
+    background-size: 100%;	
+   	/*opacity: 0.8;*/
+   }
+   .f{
+   	transform: rotateY(90deg) translateZ(100px);
+   	 background: url(http://i1.piimg.com/587265/edd6038fed141e56.jpg) no-repeat;
+    background-size: 100%;	
+   	/*opacity: 0.8; */
+
+   }
+   /*ul:hover{
+   	animation: wei 2s infinite linear ;
+
+   }*/
+/*   ul:hover .a{
+    opacity: 0.3;
+    transition: all 2s;
+
+   }*/
+   @keyframes wei {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+   
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+	</style>
+</head>
+<body>
+    <ul>
+    	<li class="a"></li>
+    	<li class="b"></li>
+    	<li class="c"></li>
+    	<li class="d"></li>
+    	<li class="e"></li>
+    	<li class="f"></li>
+    </ul>
+</body>
+</html>
